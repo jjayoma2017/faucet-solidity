@@ -1,0 +1,16 @@
+web3.eth.getCode("0xc18ce31B0D87d69586Fc11aBEeFf476aE50f773B")
+truffle migrate
+truffle migrate --reset
+accounts
+truffle console
+
+const i = await Faucet.deployed()
+ i.addFunds({value:"2000000000000000000"})
+ 
+web3.eth.getStorageAt("0x814Bb156378f334EefcDb9342CD5Fd7b4906f2F6",0)
+i.widthdraw("500000000000000000", {from: accounts[1]})
+
+const i = new web3.eth.Contract(abi, address);
+const i = new web3.eth.Contract(Faucet.abi, "0xAc465294B8789A725006A7480BD91D4657CE94bf");
+const res = await i2.methods.emitLog().call()
+web3.utils.hexToUtf8(res)
